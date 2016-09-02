@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js></script>
+	</head>
+
+	<body ng-app="ToDoList">
+		<div ng-controller="MainController">
+			<!-- <li> {{ list[0]}} </li>
+			<li> {{ list[1]}} </li>
+			<li> {{ list[2]}} </li> -->
+			<div ng-repeat="items in list">
+				<li>{{ items }}</li>
+			</div>
+			<input ng-model="addToDo">
+			<button ng-click="addItem()">Add This To-Do</button>
+			
+			</div>
+		</div>
+		<!-- Application Modeule -->
+		<script src="js/app.js"></script>
+		<!-- Controllers -->
+		<script src="js/MainController.js"></script>
+	</body>
+</html>
